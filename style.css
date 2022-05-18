@@ -28,7 +28,7 @@ li {
 }
 
 a {
-  color: initial;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -114,6 +114,7 @@ p {
   padding: 8px 16px;
   border: 1px solid transparent;
   border-radius: 4px;
+  text-align: center;
 }
 
 .btn:hover {
@@ -438,10 +439,6 @@ p {
 
 .discover__section {
   margin: 1em 0;
-}
-
-.discover a {
-  color: inherit;
 }
 
 /* FOOTER */
