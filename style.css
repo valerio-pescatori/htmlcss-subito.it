@@ -51,6 +51,11 @@ h4 {
   letter-spacing: 1.2px;
 }
 
+h5 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
 p {
   color: var(--sLightGrey);
   margin-top: 0.5em;
@@ -88,8 +93,6 @@ p {
 .header {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid lightgray;
-  border-top: 1px solid lightgray;
   padding: 24px 0;
 }
 
@@ -406,7 +409,7 @@ p {
 /* APP WIDGET SECTION */
 .app-widget {
   background-color: var(--sWhiteSmoke);
-  width: 90%;
+  width: 95%;
   margin: 5em auto;
   padding: 2em 0;
   display: flex;
@@ -424,6 +427,23 @@ p {
 .app-widget__badge-wrapper > * {
   margin: 0 0.5em;
 }
+
+/* DISCOVER SECTION */
+.discover {
+  width: 95%;
+  margin: 0 auto;
+  padding: 2em 0;
+  border-top: 1;
+}
+
+.discover__section {
+  margin: 1em 0;
+}
+
+.discover a {
+  color: inherit;
+}
+
 /* UTILS */
 .bold {
   font-weight: bold;
@@ -437,6 +457,31 @@ p {
   color: var(--sGrey);
 }
 
+.text-light-grey {
+  color: var(--sLightGrey);
+}
+
+.text-blue {
+  color: var(--sBlue);
+}
+
+.text-purple {
+  color: var(--sPurple);
+}
+
+.text-yellow {
+  color: var(--sYellow);
+}
+
+.text-green {
+  color: var(--sGreen);
+}
+
 .text-small {
   font-size: 14px;
+}
+
+.border-top-bottom {
+  border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
 }
