@@ -444,6 +444,59 @@ p {
   color: inherit;
 }
 
+/* FOOTER */
+.footer {
+  width: 95%;
+  margin: 2em auto;
+  margin-bottom: 5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer ul {
+  display: flex;
+  flex-flow: column wrap;
+  max-height: 550px;
+}
+
+.footer li {
+  margin: 0.75em 0;
+  text-transform: capitalize;
+}
+
+.footer li:hover {
+  text-decoration: underline;
+}
+
+.footer__icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+.footer__subito {
+  flex-basis: 50%;
+}
+
+.footer__app {
+  flex-basis: 25%;
+}
+.footer__seguici {
+  flex-basis: 25%;
+}
+
+.footer__bottom {
+  text-align: center;
+}
+
+.footer__logo {
+  width: 136px;
+  height: 32px;
+  margin-bottom: 1em;
+}
+
 /* UTILS */
 .bold {
   font-weight: bold;
