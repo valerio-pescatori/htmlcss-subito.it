@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- NAVBAR -->
+      <nav class="nav">
+        <ul>
+          <li class="nav__item">Magazine</li>
+          <li class="nav__item">Consigli per la vendita</li>
+          <li class="nav__item">Negozi e Aziende</li>
+          <li class="nav__item">Subito per le Aziende</li>
+          <li class="nav__item">Aiuto</li>
+          <li class="nav__item">Ricerche salvate</li>
+          <li class="nav__item">Preferiti</li>
+        </ul>
+      </nav>
+      <!-- HEADER -->
+      <header class="header">
+        <a href="#">
+          <h1>
+            <img class="header__logo" src="./assets/logo.svg" alt="logo" />
+          </h1>
+        </a>
+        <div class="header__right">
+          <a href="#"><span class="header__item bold">Accedi</span></a>
+          <a href="#"><span class="header__item">Registrati</span></a>
+          <button class="btn btn--red bold">
+            <svg class="btn__img" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8zm0-2h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zm5 8h3a1 1 0 0 1 0 2h-3v3a1 1 0 0 1-2 0v-3H8a1 1 0 0 1 0-2h3V8a1 1 0 0 1 2 0v3z"
+              ></path>
+            </svg>
+            <span class="btn__text"> Inserisci annuncio </span>
+          </button>
+        </div>
+      </header>
+
+      <!-- MAIN -->
+      <main>
+        <!-- SEARCH SECTION -->
+        <section class="search">
+          <form class="search__form" action="/#" method="post">
+            <!-- First input -->
+            <div>
+              <p class="search__caption bold">Cosa cerchi?</p>
+              <div class="input">
+                <svg class="input__icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.597 14.205a.989.989 0 01.098.086l5.014 5.014a.993.993 0 11-1.404 1.404l-5.014-5.014a1.002 1.002 0 01-.086-.098 7 7 0 111.392-1.392zM10 15a5 5 0 100-10 5 5 0 000 10z"
+                  />
+                </svg>
+                <input
+                  class="input__text"
+                  type="text"
+                  name="search_query"
+                  id="search_query"
+                  placeholder="Vespa, iPhone, Bilocale"
+                />
+              </div>
+            </div>
+            <!-- Second input -->
+            <div>
+              <p class="search__caption bold">In quale categoria?</p>
+              <div class="input">
+                <svg class="input__icon" width="28" height="24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4 2h5a2 2 0 012 2v5a2 2 0 01-2 2H4a2 2 0 01-2-2V4a2 2 0 012-2zm0 2v5h5V4H4zm0 9h5a2 2 0 012 2v5a2 2 0 01-2 2H4a2 2 0 01-2-2v-5a2 2 0 012-2zm0 2v5h5v-5H4zM15 2h5a2 2 0 012 2v5a2 2 0 01-2 2h-5a2 2 0 01-2-2V4a2 2 0 012-2zm0 2v5h5V4h-5zm0 9h5a2 2 0 012 2v5a2 2 0 01-2 2h-5a2 2 0 01-2-2v-5a2 2 0 012-2zm0 2v5h5v-5h-5z"
+                  />
+                </svg>
+                <select class="input__text" id="category">
+                  <option value="all" selected>Tutte le categorie</option>
+                  <option value="cat1">Categoria 1</option>
+                  <option value="cat2">Categoria 2</option>
+                  <option value="cat3">Categoria 3</option>
+                </select>
+              </div>
+            </div>
+            <!-- Third input -->
+            <div>
+              <p class="search__caption bold">Dove?</p>
+              <div class="input">
+                <svg
+                  class="input__icon"
+                  width="24px"
+                  height="24px"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <g id="Pin" stroke="none" stroke-width="1" fill="#aeb9c6" fill-rule="evenodd">
+                    <path
+                      d="M12 22c-5.333-5.054-8-9.054-8-12a8 8 0 1116 0c0 2.946-2.667 6.946-8 12zM6 10c0 2.008 1.969 5.156 6 9.207 4.031-4.051 6-7.2 6-9.207a6 6 0 10-12 0zm6 3a3 3 0 110-6 3 3 0 010 6zm0-2a1 1 0 100-2 1 1 0 000 2z"
+                    ></path>
+                  </g>
+                </svg>
+                <input
+                  class="input__text"
+                  type="text"
+                  name="location"
+                  id="location"
+                  placeholder="Comune, Provincia o Regione"
+                />
+              </div>
+            </div>
+            <!-- Submit button -->
+            <div>
+              <!-- hack brutto? forse sì ma me lo tengo, chapeau -->
+              <p class="search__caption">&ZeroWidthSpace;</p>
+              <div class="input input--red-btn">
+                <svg class="input__icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill="#fff"
+                    d="M15.597 14.205a.989.989 0 01.098.086l5.014 5.014a.993.993 0 11-1.404 1.404l-5.014-5.014a1.002 1.002 0 01-.086-.098 7 7 0 111.392-1.392zM10 15a5 5 0 100-10 5 5 0 000 10z"
+                  />
+                </svg>
+                <input type="submit" value="" />
+              </div>
+            </div>
+          </form>
+        </section>
+
+        <!-- EXPLORE SECTION -->
+        <section class="explore">
+          <h2 class="explore__title">Esplora le nostre sezioni</h2>
+          <div class="row">
+            <!-- CARD MOTORI -->
+            <div class="card card--blue">
+              <img class="card__img" src="./assets/motori-desktop-white.svg" alt="Motori" />
+              <button class="card__btn bold">Cerca in Motori</button>
+            </div>
+            <!-- CARD MARKET -->
+            <div class="card card--yellow">
+              <img class="card__img" src="./assets/market-desktop-white.svg" alt="Market" />
+              <button class="card__btn bold">Cerca in Market</button>
+            </div>
+
+            <!-- CARD IMMOBILI -->
+            <div class="card card--purple">
+              <img class="card__img" src="./assets/immobili-desktop-white.svg" alt="Immobili" />
+              <button class="card__btn bold">Cerca in Immobili</button>
+            </div>
+            <!-- CARD LAVORO -->
+
+            <div class="card card--green">
+              <img class="card__img" src="./assets/lavoro-desktop-white.svg" alt="Lavoro" />
+              <button class="card__btn bold">Cerca in Lavoro</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- TUTTO SUBITO -->
+        <section class="tsubito">
+          <!-- First block -->
+          <div class="tsubito__first">
+            <h2>Prova TuttoSubito</h2>
+            <p>
+              Il nostro servizio di <span class="bold">pagamento sicuro</span> e
+              <span class="bold">spedizione integrata</span>.
+            </p>
+            <a class="bold text-red" href="#">Scopri</a>
+          </div>
+          <!-- Second box -->
+          <div class="tsubito__box box--pay">
+            <button class="btn btn--tsubito bold">Paga in sicurezza</button>
+          </div>
+          <!-- Third box -->
+          <div class="tsubito__box box--sell">
+            <button class="btn btn--tsubito bold">Vendi gratis</button>
+          </div>
+        </section>
+
+        <!-- SELL WIDGET -->
+        <section class="sell-widget">
+          <div class="sell-widget__text">
+            <h2>Comincia a guadagnare</h2>
+            <p>Dai al tuo usato una seconda occasione: vendi quello che non usi più, subito.</p>
+          </div>
+          <div>
+            <button class="btn btn--red">
+              <svg class="btn__img" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8zm0-2h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zm5 8h3a1 1 0 0 1 0 2h-3v3a1 1 0 0 1-2 0v-3H8a1 1 0 0 1 0-2h3V8a1 1 0 0 1 2 0v3z"
+                ></path>
+              </svg>
+              <span class="btn__text"> Inserisci annuncio </span>
+            </button>
+          </div>
+        </section>
+
+        <!-- MAGAZINE WIDGET -->
+        <section>
+          <a href="#">
+            <div class="magazine">
+              <div class="magazine__img"></div>
+              <div class="magazine__text">
+                <h4>subito</h4>
+                <h2>La second hand non è una seconda scelta</h2>
+                <p>Fai la scelta giusta per te e per il pianeta.</p>
+              </div>
+            </div>
+          </a>
+        </section>
+
+        <!-- SAFETY TIPS -->
+        <section class="safety">
+          <h2>Rendiamo sicuri i tuoi affari</h2>
+          <div class="safety__body">
+            <a href="#"> </a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
