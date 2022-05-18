@@ -403,6 +403,27 @@ p {
   background-image: url(./assets/safety3.webp);
 }
 
+/* APP WIDGET SECTION */
+.app-widget {
+  background-color: var(--sWhiteSmoke);
+  width: 90%;
+  margin: 5em auto;
+  padding: 2em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-widget__header {
+  color: var(--sGrey);
+}
+
+.app-widget__badge-wrapper {
+  margin: 1em 0;
+}
+.app-widget__badge-wrapper > * {
+  margin: 0 0.5em;
+}
 /* UTILS */
 .bold {
   font-weight: bold;
