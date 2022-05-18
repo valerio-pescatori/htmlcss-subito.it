@@ -3,6 +3,7 @@
 :root {
   --sGrey: #3c4858;
   --sLightGrey: #717e8f;
+  --sWhiteSmoke: #f7f8fb;
   --sRed: #f9423a;
   --sBlue: #2650ff;
   --sYellow: #f2a700;
@@ -83,7 +84,7 @@ p {
   text-decoration: underline;
 }
 
-/* HEADER */
+/* HEADER SECTION*/
 .header {
   display: flex;
   justify-content: space-between;
@@ -105,7 +106,7 @@ p {
   text-decoration: underline;
 }
 
-/* BUTTON */
+/* Button */
 .btn {
   padding: 8px 16px;
   border: 1px solid transparent;
@@ -132,7 +133,7 @@ p {
   fill: red;
 }
 
-/* SEARCH */
+/* SEARCH SECTION */
 
 .search__form {
   display: flex;
@@ -200,7 +201,7 @@ p {
   color: gray;
 }
 
-/* EXPLORE */
+/* EXPLORE SECTION */
 .explore__title {
   margin-bottom: 24px;
   text-align: center;
@@ -262,7 +263,7 @@ p {
   background-color: var(--sGreen);
 }
 
-/* TUTTO SUBITO */
+/* TUTTO SUBITO SECTION*/
 .tsubito {
   display: flex;
 }
@@ -308,7 +309,7 @@ p {
   border: 1px solid transparent;
 }
 
-/* SELL WIDGET */
+/* SELL WIDGET SECTION*/
 .sell-widget {
   display: flex;
   justify-content: space-around;
@@ -330,7 +331,7 @@ p {
   color: var(--sLightGrey);
 }
 
-/* MAGAZINE */
+/* MAGAZINE SECTION */
 .magazine {
   display: flex;
   height: 300px;
@@ -356,6 +357,52 @@ p {
   color: var(--sRed);
 }
 
+/* SAFETY TIPS SECTION */
+.safety {
+  margin-top: 100px;
+  background-color: var(--sWhiteSmoke);
+  padding: 3em 2em;
+}
+
+.safety__body {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.safety__box {
+  flex-basis: calc(100% / 3);
+  display: flex;
+  align-items: flex-end;
+  height: 250px;
+  padding: 1em;
+  padding-top: 0;
+  margin: 0 0.75em;
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.safety__box:first-of-type {
+  margin-left: 0;
+}
+
+.safety__box:last-of-type {
+  margin-right: 0;
+}
+
+.box--safety1 {
+  background-image: url(./assets/safety1.webp);
+}
+.box--safety2 {
+  background-image: url(./assets/safety2.webp);
+}
+.box--safety3 {
+  background-image: url(./assets/safety3.webp);
+}
+
 /* UTILS */
 .bold {
   font-weight: bold;
@@ -363,4 +410,12 @@ p {
 
 .text-red {
   color: var(--sRed);
+}
+
+.text-grey {
+  color: var(--sGrey);
+}
+
+.text-small {
+  font-size: 14px;
 }
