@@ -156,6 +156,11 @@ p {
   margin-bottom: 0.5em;
 }
 
+.search__form > div:last-child {
+  display: flex;
+  align-items: flex-end;
+}
+
 /* Input */
 .input {
   padding: 0.7em;
