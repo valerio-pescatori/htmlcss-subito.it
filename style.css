@@ -169,6 +169,10 @@ p {
   display: flex;
 }
 
+.input:hover {
+  border-color: grey;
+}
+
 .input--red-btn {
   position: relative;
   background-color: var(--sRed);
@@ -185,14 +189,16 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 5px;
+  /* piccolo bug sul border */
+  border-radius: 4.2px;
 }
+
 .input--red-btn:hover::before {
   background-color: var(--sTransparentOverlay);
 }
 
-.input:hover {
-  border-color: grey;
+.input--red-btn:hover {
+  border-color: var(--sTransparentOverlay);
 }
 
 .input__icon {
