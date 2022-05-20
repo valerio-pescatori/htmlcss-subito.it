@@ -198,7 +198,6 @@ p {
 }
 
 .input--red-btn {
-  z-index: -1;
   position: relative;
   background-color: var(--sRed);
   border: none;
@@ -263,7 +262,6 @@ p {
   padding: 1.5em;
   padding-top: 2.5em;
   padding-bottom: 1.5em;
-  z-index: -1;
 }
 
 .card__img {
@@ -646,6 +644,7 @@ span.input__icon,
     font-size: 9px;
     font-weight: 700;
     line-height: 16px;
+    z-index: 99;
   }
 
   #logo-mobile {
@@ -778,7 +777,31 @@ span.input__icon,
 
   /* TSUBITO */
   .tsubito {
+    padding: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: white;
     min-height: 212px;
+    overflow: auto hidden;
+    scrollbar-width: thin;
+    white-space: nowrap;
+  }
+
+  .tsubito::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .tsubito::-webkit-scrollbar-thumb {
+    background: #cdcdcd;
+  }
+  .tsubito::-webkit-scrollbar-thumb:hover {
+    background: #a6a6a6;
+  }
+
+  .tsubito__first {
+    white-space: normal;
+    min-width: 30%;
+    height: 50%;
   }
 
   .tsubito__first > h2 {
@@ -908,5 +931,22 @@ span.input__icon,
   .footer__app {
     margin-top: 1em;
     flex-basis: 50%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  /* TSUBITO */
+  .tsubito__first {
+    min-width: 50%;
+  }
+
+  /* SELL WIDGET */
+  .sell-widget__text > p {
+    padding-right: 5em;
+  }
+
+  /* SAFETY */
+  .safety__box {
+    width: 90%;
   }
 }
