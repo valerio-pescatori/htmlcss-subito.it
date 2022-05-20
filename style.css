@@ -69,14 +69,6 @@ p {
   margin-top: 0.5em;
 }
 
-.header__mobile {
-  display: none;
-}
-
-#logo-mobile {
-  display: none;
-}
-
 /* CONTAINER */
 .container {
   margin: 0 auto;
@@ -175,7 +167,11 @@ p {
   box-shadow: 0 10px 24px 0 rgba(0, 0, 0, 0.1);
 }
 
-.search__form > div:not(:last-child) {
+.search__form p {
+  font-size: 14px;
+}
+
+.search__block {
   flex-grow: 1;
   margin: 0 0.3em;
 }
@@ -328,12 +324,12 @@ p {
 }
 
 .tsubito__box {
-  flex: 0 0 300px;
   height: 216px;
   border-radius: 5px;
   background-size: cover;
   background-position: center;
   display: flex;
+  flex: 1 0 300px;
   align-items: flex-end;
 }
 
@@ -364,7 +360,7 @@ p {
   justify-content: space-around;
   align-items: center;
   border: 1px solid lightgray;
-  height: 150px;
+  min-height: 150px;
   border-radius: 5px;
   background: url("./assets/001_DESKTOP_inserisciannuncio.jpg") left center no-repeat;
   background-size: contain;
@@ -592,6 +588,15 @@ p {
   border-top: 1px solid lightgray;
 }
 
+/* Display reset */
+.header__mobile,
+#logo-mobile,
+h2.search__caption,
+span.input__icon,
+.card--mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 980px) {
   /* CONTAINER  */
   .container {
@@ -632,6 +637,7 @@ p {
     position: fixed;
     top: 0;
     left: 0;
+    padding-top: 1em;
     width: 100%;
     background-color: white;
     display: flex;
@@ -706,4 +712,170 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
+  /* HEADER */
+  #logo-mobile {
+    margin-top: 2em;
+  }
+
+  /* SEARCH FORM */
+  .search__form {
+    flex-direction: column;
+  }
+
+  .search__block {
+    margin-bottom: 1em;
+  }
+
+  p.search__caption {
+    display: none;
+  }
+
+  h2.search__caption {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .search__block:not(:first-child) > p {
+    display: none;
+  }
+
+  .input--red-btn {
+    width: 100%;
+  }
+
+  .search__last-block svg.input__icon {
+    display: none;
+  }
+
+  span.input__icon {
+    display: inline-block;
+    color: white;
+    margin: 0 auto;
+  }
+
+  /* EXPLORE */
+
+  .card--mobile {
+    display: block;
+  }
+
+  .card {
+    height: 85px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .card__img:not(.card--mobile) {
+    display: none;
+  }
+
+  .card__btn {
+    display: none;
+  }
+
+  /* TSUBITO */
+  .tsubito {
+    min-height: 212px;
+  }
+
+  .tsubito__first > h2 {
+    font-size: 16px;
+  }
+
+  .tsubito__first > p,
+  .tsubito__first > a {
+    font-size: 14px;
+  }
+
+  .tsubito__box {
+    flex-basis: 144px;
+    height: 159px;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 0;
+  }
+
+  .btn--tsubito {
+    padding: 0;
+    height: 32px;
+    line-height: 32px;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    margin-top: 1em;
+  }
+
+  /* SELL WIDGET */
+  .sell-widget {
+    background-image: url("./assets/001_MOBILE_inserisciannuncio_small.svg.png");
+    background-position-x: right;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 2em;
+  }
+
+  .btn__img {
+    display: none;
+  }
+
+  .sell-widget__text {
+    margin-left: 0;
+  }
+
+  .btn--red {
+    font-size: 14px;
+    margin: 2em 0;
+  }
+
+  /* MAGAZINE */
+  .magazine {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .magazine__img {
+    flex-basis: 100%;
+    padding-top: 56%;
+  }
+
+  .magazine__text {
+    margin-top: 1em;
+    flex-basis: 100%;
+  }
+
+  .magazine__text > h4 {
+    margin-bottom: 1em;
+  }
+
+  /* APP WIDGET */
+  .app-widget__badge-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app-widget__badge-wrapper > a:last-child {
+    margin-top: 1em;
+  }
+
+  /* FOOTER */
+  .footer {
+    flex-wrap: wrap;
+  }
+
+  .footer__subito,
+  .footer__bottom {
+    flex-basis: 100%;
+  }
+
+  .footer__seguici,
+  .footer__app {
+    margin-top: 1em;
+    flex-basis: 50%;
+  }
 }

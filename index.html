@@ -43,6 +43,7 @@
         </div>
       </header>
 
+      <!-- HEADER MOBILE -->
       <header class="header__mobile border-top-bottom">
         <!-- Home -->
         <div class="header__item header--text-grey">
@@ -125,7 +126,7 @@
 
       <!-- MAIN -->
       <main>
-        <!-- LOGO -->
+        <!-- LOGO MOBILE -->
         <h1 id="logo-mobile" class="header__logo">
           <a href="#">
             <img src="./assets/corporate-short.svg" alt="logo" />
@@ -134,10 +135,11 @@
 
         <!-- SEARCH SECTION -->
         <section class="search">
-          <form class="search__form" action="/#" method="post">
+          <div class="search__form" action="/#" method="post">
             <!-- First input -->
-            <div>
+            <div class="search__block">
               <p class="search__caption bold">Cosa cerchi?</p>
+              <h2 class="search__caption bold">Cosa cerchi?</h2>
               <div class="input">
                 <svg class="input__icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -154,7 +156,7 @@
               </div>
             </div>
             <!-- Second input -->
-            <div>
+            <div class="search__block">
               <p class="search__caption bold">In quale categoria?</p>
               <div class="input">
                 <svg class="input__icon" width="28" height="24" xmlns="http://www.w3.org/2000/svg">
@@ -171,7 +173,7 @@
               </div>
             </div>
             <!-- Third input -->
-            <div>
+            <div class="search__block">
               <p class="search__caption bold">Dove?</p>
               <div class="input">
                 <svg
@@ -197,10 +199,7 @@
               </div>
             </div>
             <!-- Submit button -->
-            <div>
-              <!-- hack brutto? forse sì ma me lo tengo, chapeau -->
-              <!-- <p class="search__caption">&ZeroWidthSpace;</p> -->
-              <!-- l'ho fixato -->
+            <div class="search__last-block">
               <div class="input input--red-btn">
                 <svg class="input__icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -208,6 +207,7 @@
                     d="M15.597 14.205a.989.989 0 01.098.086l5.014 5.014a.993.993 0 11-1.404 1.404l-5.014-5.014a1.002 1.002 0 01-.086-.098 7 7 0 111.392-1.392zM10 15a5 5 0 100-10 5 5 0 000 10z"
                   />
                 </svg>
+                <span class="input__icon bold">Cerca</span>
                 <input type="submit" value="" />
               </div>
             </div>
@@ -221,23 +221,27 @@
             <!-- CARD MOTORI -->
             <div class="card card--blue">
               <img class="card__img" src="./assets/motori-desktop-white.svg" alt="Motori" />
+              <img class="card__img card--mobile" src="./assets/motori-mobile-white.svg" alt="Motori">
               <button class="card__btn bold">Cerca in Motori</button>
             </div>
             <!-- CARD MARKET -->
             <div class="card card--yellow">
               <img class="card__img" src="./assets/market-desktop-white.svg" alt="Market" />
+              <img class="card__img card--mobile" src="./assets/market-mobile-white.svg" alt="Market">
               <button class="card__btn bold">Cerca in Market</button>
             </div>
 
             <!-- CARD IMMOBILI -->
             <div class="card card--purple">
               <img class="card__img" src="./assets/immobili-desktop-white.svg" alt="Immobili" />
+              <img class="card__img card--mobile" src="./assets/immobili-mobile-white.svg" alt="Immobili" >
               <button class="card__btn bold">Cerca in Immobili</button>
             </div>
             <!-- CARD LAVORO -->
 
             <div class="card card--green">
               <img class="card__img" src="./assets/lavoro-desktop-white.svg" alt="Lavoro" />
+              <img class="card__img card--mobile" src="./assets/lavoro-mobile-white.svg" alt="Lavoro">
               <button class="card__btn bold">Cerca in Lavoro</button>
             </div>
           </div>
@@ -254,14 +258,14 @@
             </p>
             <a class="bold text-red" href="#">Scopri</a>
           </div>
-          <!-- Second box -->
-          <div class="tsubito__box box--pay text-small">
-            <a class="btn btn--tsubito bold" href="#">Paga in sicurezza</a>
-          </div>
-          <!-- Third box -->
-          <div class="tsubito__box box--sell text-small">
-            <a class="btn btn--tsubito bold" href="#">Vendi gratis</a>
-          </div>
+            <!-- Second box -->
+            <div class="tsubito__box box--pay text-small">
+              <a class="btn btn--tsubito bold" href="#">Paga in sicurezza</a>
+            </div>
+            <!-- Third box -->
+            <div class="tsubito__box box--sell text-small">
+              <a class="btn btn--tsubito bold" href="#">Vendi gratis</a>
+            </div>
         </section>
 
         <!-- SELL WIDGET -->
