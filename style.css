@@ -863,6 +863,37 @@ span.input__icon,
     margin-top: 1em;
   }
 
+  /* SAFETY */
+
+  .safety__body {
+    display: block;
+    overflow: scroll hidden;
+    white-space: nowrap;
+    scrollbar-width: thin;
+  }
+
+  .safety__body::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .safety__body::-webkit-scrollbar-thumb {
+    background: #cdcdcd;
+  }
+  .safety__body::-webkit-scrollbar-thumb:hover {
+    background: #a6a6a6;
+  }
+
+  .safety__box {
+    display: inline-block;
+    position: relative;
+    width: 40%;
+  }
+
+  .safety__text {
+    position: absolute;
+    bottom: 0;
+  }
+
   /* FOOTER */
   .footer {
     flex-wrap: wrap;
