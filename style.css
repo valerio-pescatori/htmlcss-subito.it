@@ -89,14 +89,17 @@ p {
   padding: 8px 0;
 }
 
+
+
+.nav__item:hover {
+  text-decoration: underline;
+}
+
 .nav__item:not(:first-child)::before {
   content: "|";
   color: lightgray;
   padding: 0 8px;
-}
-
-.nav__item:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* HEADER SECTION*/
